@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abbu Saikiran | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: #ffffff;
+      scroll-behavior: smooth;
+      min-height: 100vh;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      background: linear-gradient(135deg, #000, #222);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .left,
+    .right {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 15px;
+      border: 5px solid white;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .name {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .title {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-bottom: 20px;
+    }
+
+    .details p {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      color: #eee;
+    }
+
+    a {
+      color: #00ffc3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 20px;
+      background-color: #121212;
+      margin: 20px auto;
+      max-width: 1100px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00ffc3;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-list li {
+      background: #1e1e1e;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 1px solid #00ffc3;
+    }
+
+    .project,
+    .about-wrapper {
+      background: #1b1b1b;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(0, 255, 200, 0.1);
+    }
+
+    .project img,
+    .animated-img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .project img:hover,
+    .animated-img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 10px 20px;
+      background-color: #00ffc3;
+      color: #0e0e0e;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00d1a1;
+    }
+
+    footer {
+      background-color: #0c0c0c;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #00ffc3;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        width: 100%;
+        margin: 5px 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <h1 class="name">Abbu Saikiran</h1>
+      <p class="title">Developer | B.Tech CSE | AI & Cybersecurity Enthusiast</p>
+      <div class="details">
+        <p><strong>📞</strong> +91 6301576935</p>
+        <p><strong>📧</strong> abbusaikiran1@gmail.com</p>
+        <p><strong>🎓</strong> BITS-Warangal | B.Tech CSE (Data Science) | 2023–2027</p>
+        <p><strong>💻</strong> Python | SQL | Power BI | Tableau</p>
+        <p><strong>🔗</strong>
+          <a href="https://www.linkedin.com/in/abbusaikiran/" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/Saikiran9015" target="_blank">GitHub</a>
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <img src="sai.png" alt="Saikiran's Photo" />
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-wrapper">
+      <img src="about-animation.gif" alt="About Animation" class="animated-img">
+      <p>I’m currently pursuing B.Tech in CSE (Data Science) at BITS-Warangal. I'm passionate about solving real-world problems with AI, data, and secure systems. I’ve worked on cybersecurity projects, AI chatbots, and inventory forecasting using ML.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>SQL</li>
+      <li>Java</li>
+      <li>Pandas</li>
+      <li>NumPy</li>
+      <li>Scikit-Learn</li>
+      <li>Matplotlib</li>
+      <li>Power BI</li>
+      <li>Tableau</li>
+      <li>Excel</li>
+      <li>MySQL</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="cyber_ai.png" alt="Cyber.AI">
+      <h3>Cyber.AI Security System</h3>
+      <p>Achieved 94% accuracy in intrusion detection and implemented AI-powered malware scanning with secure authentication.</p>
+    </div>
+    <div class="project">
+      <img src="llm.png" alt="LLM Chatbot">
+      <h3>Chatbot with Local LLM</h3>
+      <p>Developed an offline console and web chatbot integrated with LLaMA 2, supporting contextual multi-turn dialogue.</p>
+    </div>
+    <div class="project">
+      <img src="sims.png" alt="Inventory">
+      <h3>Inventory Management System</h3>
+      <p>ML-based demand forecasting system with 89% accuracy, automated reorder alerts, and analytics dashboard.</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Generative AI – SAWIT.AI (2025)</li>
+      <li>Cyber Security & Ethical Hacking (2024)</li>
+      <li>Microsoft Azure AI Fundamentals (2024)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: abbusaikiran1@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/abbusaikiran" target="_blank">linkedin.com/in/abbusaikiran</a></p>
+    <p>GitHub: <a href="https://github.com/Saikiran9015" target="_blank">github.com/Saikiran9015</a></p>
+    <a href="sai  resume.pdf" class="btn" download>Download Resume</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Abbu Saikiran. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
